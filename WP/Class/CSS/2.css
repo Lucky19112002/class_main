@@ -1,0 +1,34 @@
+#box1{
+  padding: 50px;
+  /* backgrount image code
+   background: #ff000f url("download.png") no-repeat left bottom; 
+   */
+  /* background-image: url("download.png");
+  background-repeat:round ; */
+  /* text properities
+  color: blue;
+  text-align: justify;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-indent: 70px;give space at start of lines */
+  /* Font prperites 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 3.75em;
+  */
+  /* border properties 
+  border: 10px;
+  border-width: 10px;
+  border-top-style: solid;
+  border-left-style: double;
+  border-right-style: dashed;
+  border-bottom-style: inset;
+  border-bottom-color: crimson;
+  border-top-color: blue;
+  border-left-color: gold;
+  border-right-color: violet;
+  border-radius: 10px;
+  border-inline-start-color: brown;
+  */
+  
+}

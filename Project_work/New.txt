@@ -1,0 +1,265 @@
+
+Host Name:                 KMLABASAM
+OS Name:                   Microsoft Windows 10 Home Single Language
+OS Version:                10.0.19044 N/A Build 19044
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          karim
+Registered Organization:   HP
+Product ID:                00327-60000-00000-AA730
+Original Install Date:     16-01-2021, 5.23.58 PM
+System Boot Time:          31-05-2022, 3.22.50 PM
+System Manufacturer:       HP
+System Model:              HP Laptop 15-db0xxx
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 23 Model 17 Stepping 0 AuthenticAMD ~2500 Mhz
+BIOS Version:              Insyde F.11, 20-08-2018
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              00004009
+Time Zone:                 (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Total Physical Memory:     3,747 MB
+Available Physical Memory: 1,236 MB
+Virtual Memory: Max Size:  8,196 MB
+Virtual Memory: Available: 3,043 MB
+Virtual Memory: In Use:    5,153 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\KMLABASAM
+Hotfix(s):                 18 Hotfix(s) Installed.
+                           [01]: KB5013624
+                           [02]: KB4562830
+                           [03]: KB4570334
+                           [04]: KB4577586
+                           [05]: KB4580325
+                           [06]: KB4586864
+                           [07]: KB4589212
+                           [08]: KB4598481
+                           [09]: KB5000736
+                           [10]: KB5003791
+                           [11]: KB5013942
+                           [12]: KB5006753
+                           [13]: KB5007273
+                           [14]: KB5009636
+                           [15]: KB5011352
+                           [16]: KB5011651
+                           [17]: KB5014032
+                           [18]: KB5005699
+Network Card(s):           4 NIC(s) Installed.
+                           [01]: Realtek PCIe GbE Family Controller
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+                           [02]: Realtek RTL8723DE 802.11b/g/n PCIe Adapter
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     10.0.0.172
+                                 IP address(es)
+                                 [01]: 172.19.20.98
+                                 [02]: fe80::c863:1de5:bb0a:caed
+                           [03]: Microsoft Wi-Fi Direct Virtual Adapter
+                                 Connection Name: Local Area Connection* 10
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.137.1
+                                 [02]: fe80::51b7:12d0:cad6:89db
+                           [04]: VirtualBox Host-Only Ethernet Adapter
+                                 Connection Name: VirtualBox Host-Only Network
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.56.1
+                                 [02]: fe80::1189:c52e:e910:ffdf
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0      5,140 K
+Registry                       100 Services                   0     37,676 K
+smss.exe                       452 Services                   0        348 K
+csrss.exe                      684 Services                   0      2,460 K
+wininit.exe                    804 Services                   0      1,208 K
+services.exe                   940 Services                   0      6,560 K
+lsass.exe                      964 Services                   0     13,356 K
+svchost.exe                    628 Services                   0     24,752 K
+fontdrvhost.exe                568 Services                   0      1,164 K
+svchost.exe                   1048 Services                   0     15,500 K
+svchost.exe                   1104 Services                   0      4,156 K
+svchost.exe                   1352 Services                   0      2,548 K
+svchost.exe                   1548 Services                   0     11,288 K
+svchost.exe                   1556 Services                   0      5,344 K
+svchost.exe                   1692 Services                   0      2,120 K
+SynTPEnhService.exe           1732 Services                   0      2,196 K
+svchost.exe                   1776 Services                   0      9,648 K
+svchost.exe                   1816 Services                   0      6,252 K
+svchost.exe                   1872 Services                   0      6,856 K
+svchost.exe                   1948 Services                   0      2,292 K
+svchost.exe                   2008 Services                   0      3,812 K
+svchost.exe                   2044 Services                   0      4,364 K
+svchost.exe                   1544 Services                   0      9,208 K
+svchost.exe                   2128 Services                   0      9,340 K
+svchost.exe                   2192 Services                   0      6,548 K
+svchost.exe                   2216 Services                   0     14,584 K
+svchost.exe                   2276 Services                   0     46,488 K
+svchost.exe                   2284 Services                   0      1,868 K
+svchost.exe                   2292 Services                   0      3,688 K
+Memory Compression            2368 Services                   0   1,62,060 K
+svchost.exe                   2408 Services                   0      4,944 K
+svchost.exe                   2432 Services                   0      3,408 K
+svchost.exe                   2440 Services                   0      3,672 K
+svchost.exe                   2544 Services                   0      9,560 K
+svchost.exe                   2612 Services                   0      1,644 K
+svchost.exe                   2652 Services                   0      3,100 K
+RtkAudioService64.exe         2736 Services                   0      3,800 K
+svchost.exe                   2868 Services                   0      5,856 K
+svchost.exe                   2880 Services                   0      3,004 K
+svchost.exe                   2900 Services                   0      5,200 K
+svchost.exe                   1596 Services                   0     15,216 K
+svchost.exe                   1328 Services                   0      6,996 K
+wlanext.exe                   2936 Services                   0      4,972 K
+conhost.exe                   3096 Services                   0      1,456 K
+spoolsv.exe                   3140 Services                   0      3,608 K
+svchost.exe                   3200 Services                   0     13,704 K
+svchost.exe                   3228 Services                   0      2,888 K
+svchost.exe                   3440 Services                   0      4,532 K
+svchost.exe                   3448 Services                   0     23,932 K
+svchost.exe                   3460 Services                   0     11,700 K
+svchost.exe                   3472 Services                   0     23,556 K
+svchost.exe                   3520 Services                   0     16,324 K
+svchost.exe                   3528 Services                   0      1,064 K
+svchost.exe                   3536 Services                   0      5,156 K
+svchost.exe                   3552 Services                   0      3,316 K
+svchost.exe                   3560 Services                   0     16,376 K
+svchost.exe                   3568 Services                   0      1,752 K
+svchost.exe                   3696 Services                   0      4,532 K
+BTDevMgr.exe                  3728 Services                   0      2,920 K
+MsMpEng.exe                   3736 Services                   0   2,41,688 K
+svchost.exe                   3816 Services                   0      1,472 K
+armsvc.exe                    3960 Services                   0      1,172 K
+RtkBtManServ.exe              3968 Services                   0      2,892 K
+HPWMISVC.exe                  4092 Services                   0      1,604 K
+svchost.exe                   1376 Services                   0      6,080 K
+svchost.exe                   3292 Services                   0      4,372 K
+svchost.exe                   4160 Services                   0      3,000 K
+svchost.exe                   4240 Services                   0      7,236 K
+svchost.exe                   4444 Services                   0      3,536 K
+svchost.exe                   4484 Services                   0      5,048 K
+svchost.exe                   4808 Services                   0     14,244 K
+svchost.exe                   3480 Services                   0      4,340 K
+NisSrv.exe                    1276 Services                   0      4,896 K
+svchost.exe                   4552 Services                   0     12,332 K
+svchost.exe                   5576 Services                   0     10,376 K
+SearchIndexer.exe             3604 Services                   0     51,376 K
+svchost.exe                   4828 Services                   0     14,244 K
+svchost.exe                   5316 Services                   0     13,676 K
+svchost.exe                   7548 Services                   0     11,308 K
+svchost.exe                   8276 Services                   0      5,380 K
+svchost.exe                   8476 Services                   0      6,524 K
+svchost.exe                   8744 Services                   0      2,796 K
+svchost.exe                   9128 Services                   0      3,596 K
+HPCommRecovery.exe            5864 Services                   0     23,172 K
+GoogleCrashHandler.exe        8908 Services                   0        156 K
+GoogleCrashHandler64.exe      8796 Services                   0         64 K
+HPJumpStartBridge.exe         8736 Services                   0      5,464 K
+HPSupportSolutionsFramewo     7720 Services                   0      7,876 K
+SgrmBroker.exe                9304 Services                   0      5,200 K
+svchost.exe                   9476 Services                   0      5,536 K
+svchost.exe                   9552 Services                   0      5,264 K
+WmiPrvSE.exe                 10040 Services                   0      6,492 K
+SecurityHealthService.exe    10232 Services                   0      8,312 K
+svchost.exe                  10216 Services                   0      3,428 K
+TrustedInstaller.exe         11648 Services                   0      5,032 K
+TiWorker.exe                  7968 Services                   0     12,840 K
+fodhelper.exe                 2172 Services                   0      2,980 K
+svchost.exe                   7276 Services                   0      2,216 K
+svchost.exe                   7244 Services                   0      1,800 K
+dasHost.exe                   9804 Services                   0      7,168 K
+csrss.exe                     6352 Console                    4      6,044 K
+winlogon.exe                 10984 Console                    4      5,584 K
+fontdrvhost.exe               9904 Console                    4      9,204 K
+dwm.exe                       6048 Console                    4     41,832 K
+SynTPEnh.exe                 10800 Console                    4     10,276 K
+sihost.exe                   11144 Console                    4     20,580 K
+svchost.exe                   7460 Console                    4     21,860 K
+svchost.exe                  13288 Console                    4     15,312 K
+HPJumpStartLaunch.exe         5884 Console                    4        144 K
+taskhostw.exe                 6516 Console                    4     16,856 K
+explorer.exe                  9776 Console                    4   1,49,472 K
+svchost.exe                   5968 Console                    4     15,244 K
+StartMenuExperienceHost.e     6276 Console                    4     46,832 K
+RuntimeBroker.exe             7052 Console                    4     16,956 K
+RuntimeBroker.exe             8968 Console                    4     34,948 K
+ctfmon.exe                    5348 Console                    4     24,312 K
+SettingSyncHost.exe          10308 Console                    4      1,312 K
+TextInputHost.exe            12264 Console                    4     22,268 K
+CastSrv.exe                   8648 Console                    4      6,788 K
+RtkNGUI64.exe                 9840 Console                    4      4,776 K
+RAVBg64.exe                   9992 Console                    4      5,792 K
+RadeonSoftware.exe           11956 Console                    4     12,660 K
+RtlS5Wake.exe                 3932 Console                    4      4,236 K
+ShellExperienceHost.exe       5612 Console                    4     25,076 K
+RuntimeBroker.exe             2084 Console                    4     13,496 K
+RuntimeBroker.exe             6296 Console                    4     22,396 K
+HPAudioSwitch.exe            10660 Console                    4      7,556 K
+svchost.exe                   9640 Console                    4      6,496 K
+UserOOBEBroker.exe            8088 Console                    4      4,252 K
+dllhost.exe                   7952 Console                    4      8,604 K
+ApplicationFrameHost.exe      5064 Console                    4     19,848 K
+WinStore.App.exe             12204 Console                    4        684 K
+RuntimeBroker.exe              344 Console                    4      3,532 K
+svchost.exe                  11240 Services                   0      2,136 K
+CompPkgSrv.exe               14060 Console                    4      2,584 K
+svchost.exe                  12880 Services                   0      1,948 K
+svchost.exe                   9368 Console                    4      2,832 K
+SystemSettingsBroker.exe      8152 Console                    4     12,112 K
+svchost.exe                  12644 Console                    4      1,580 K
+svchost.exe                   5808 Console                    4      1,512 K
+hpqwmiex.exe                 10088 Services                   0      3,212 K
+svchost.exe                   9248 Services                   0      3,828 K
+TabTip.exe                   13676 Console                    4      7,108 K
+AMDRSServ.exe                13680 Console                    4      3,560 K
+taskhostw.exe                 9832 Console                    4      9,896 K
+MpCopyAccelerator.exe         7508 Services                   0      2,800 K
+SearchApp.exe                13792 Console                    4      3,868 K
+svchost.exe                  13032 Services                   0      1,856 K
+svchost.exe                  13916 Services                   0      3,648 K
+svchost.exe                   1924 Services                   0      5,384 K
+svchost.exe                   9284 Services                   0      6,168 K
+explorer.exe                 10552 Console                    4     64,188 K
+dllhost.exe                  17272 Console                    4      1,884 K
+Video.UI.exe                 12756 Console                    4      4,268 K
+RuntimeBroker.exe            14952 Console                    4      5,812 K
+dllhost.exe                  14768 Console                    4      7,348 K
+SystemSettings.exe           13652 Console                    4      1,948 K
+svchost.exe                  15736 Services                   0     17,328 K
+svchost.exe                   7584 Services                   0      5,976 K
+SDXHelperBgt.exe             12592 Console                    4     11,976 K
+YourPhone.exe                16888 Console                    4     42,228 K
+SearchApp.exe                16452 Console                    4     95,088 K
+RuntimeBroker.exe            17128 Console                    4     15,432 K
+SearchProtocolHost.exe       16556 Services                   0     12,736 K
+smartscreen.exe              11392 Console                    4     24,092 K
+audiodg.exe                  15980 Services                   0     21,028 K
+SearchFilterHost.exe         14940 Services                   0     12,108 K
+svchost.exe                   7324 Services                   0      8,152 K
+py.exe                       13824 Console                    4      7,612 K
+conhost.exe                   7560 Console                    4     17,980 K
+python.exe                   14020 Console                    4     10,280 K
+cmd.exe                       8964 Console                    4      5,468 K
+WmiPrvSE.exe                  1712 Services                   0     16,352 K
+SearchProtocolHost.exe       10592 Console                    4      9,132 K
+WmiPrvSE.exe                 14388 Services                   0      9,860 K
+tasklist.exe                 14468 Console                    4     10,340 K
+
+Physical Address    Transport Name                                            
+=================== ==========================================================
+84-A9-3E-3B-D8-AC   Media disconnected                                        
+D0-C5-D3-7D-9A-1D   \Device\Tcpip_{A582DA07-C1EB-4EA6-8A4E-EFB67884A9A7}      
+D0-C5-D3-7D-9A-1D   \Device\Tcpip_{BE32B6AE-170F-4C33-9FCE-E2BDA2DB470A}      
+0A-00-27-00-00-0F   \Device\Tcpip_{5B79FA47-BB83-4B71-A94E-05F3C7A6B0C0}      
