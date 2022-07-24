@@ -59,7 +59,7 @@ void insertsort(int arr[])
 int main()
 {
   {//bubble short 
-    ofstream bf("1.bat",ios::app);
+    ofstream bf("file_out/1.bat",ios::app);
     bf<<"#Bubble sort in milliseconds"<<endl;
     cout<<endl<<"Working on bubble sort ....";
     for(sizeofarray1 =10000;sizeofarray1<=50000;sizeofarray1=sizeofarray1+10000)
@@ -81,7 +81,7 @@ int main()
     cout<<".... "<<"Done";
   }
   {//selection sort 
-    ofstream bf("2.bat",ios::app);
+    ofstream bf("file_out/2.bat",ios::app);
     bf<<"#selection sort in milliseconds"<<endl;
     cout<<endl<<"Working on selection sort ....";
     for(sizeofarray2 =10000;sizeofarray2<=50000;sizeofarray2=sizeofarray2+10000)
@@ -103,7 +103,7 @@ int main()
     cout<<".... "<<"Done";
   }
   {//insertion sort 
-    ofstream bf("3.bat",ios::app);
+    ofstream bf("file_out/3.bat",ios::app);
     bf<<"#insertion sort in milliseconds"<<endl;
     cout<<endl<<"Working on insertion sort ....";
     for(sizeofarray3 =10000;sizeofarray3<=50000;sizeofarray3=sizeofarray3+10000)
@@ -125,6 +125,6 @@ int main()
     cout<<".... "<<"Done";
   }
   cout<<endl<<"Ploting the graph...";
-  system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'G:/Sem_5/DAA/1.bat' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'bubble','G:/Sem_5/DAA/2.bat' using 1:2 w lp lc rgb 'blue' lw 2 pt 7 title 'selection short','G:/Sem_5/DAA/3.bat' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'insertion short'\"");
+  system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'G:/Sem_5/DAA/file_out/1.bat' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'bubble','G:/Sem_5/DAA/file_out/2.bat' using 1:2 w lp lc rgb 'blue' lw 2 pt 7 title 'selection short','G:/Sem_5/DAA/file_out/3.bat' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'insertion short'\"");
   return 0;
 }
