@@ -1,0 +1,6 @@
+#insertion sort in milliseconds
+10000 219
+20000 368
+30000 941
+40000 1506
+50000 2358

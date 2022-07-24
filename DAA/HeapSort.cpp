@@ -37,7 +37,7 @@ using namespace std::chrono;
   int main()
 {
   {//bubble short 
-    ofstream bf("heap.bat");
+    ofstream bf("file_out/heap.bat");
     bf<<"#Bubble sort in milliseconds"<<endl;
     cout<<endl<<"Working on bubble sort ....";
     for(sizeofarray1 =10000;sizeofarray1<=50000;sizeofarray1=sizeofarray1+10000)
@@ -59,6 +59,6 @@ using namespace std::chrono;
     cout<<".... "<<"Done";
   }
  cout<<endl<<"Ploting the graph...";
-  system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'C:/amit/Lucky/DAA/heap.bat' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'heap'\"");
+  system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'G:/Sem_5/DAA/file_out/heap.bat' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'heap'\"");
     return 0;
 }

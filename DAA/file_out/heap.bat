@@ -1,0 +1,6 @@
+#Bubble sort in milliseconds
+10000 2
+20000 15
+30000 18
+40000 35
+50000 28
