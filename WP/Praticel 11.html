@@ -4,7 +4,7 @@
     <script>
         function tagstyle(){
             var data1 ="String number 1.";
-            var data2 ="String number 1.";
+            var data2 ="String number 2.";
             const fruits = ["Banana", "Orange", "Apple", "Mango"];
             document.getElementById("1").innerHTML= "1. Using toString : " +fruits.toString();
             document.getElementById("2").innerHTML= "2. Using join function "+ fruits.join(" * ");
@@ -16,8 +16,8 @@
             document.getElementById("8").innerHTML= "8. Delete of string : "+ delete fruits[0] + " Output is "+ fruits.toString();
             const data3 = data1.concat(data2);
             document.getElementById("9").innerHTML= "9. Concet of string : "+" Output is " + data3.toString();
-            document.getElementById("10").innerHTML= "10. Splice of string : "+ fruits.splice(2, 0, "Lemon", "Kiwi") + " Output is "+ fruits.toString();
-            document.getElementById("11").innerHTML= "11. Slice of string : "+ fruits.slice(1) + " Output is "+ fruits.toString();
+            document.getElementById("10").innerHTML= "10. Splice of string : "+ fruits.splice(0, 3);
+            document.getElementById("11").innerHTML= "11. Slice of string : "+ fruits.slice(0);
             document.getElementById("12").innerHTML= "12. Date  : "+ new Date() ;  
         }
     </script>
