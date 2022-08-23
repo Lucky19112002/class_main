@@ -1,0 +1,27 @@
+#A2
+    {
+        color:steelblue;
+        background-color:red;
+    }
+body
+{
+    background-image: url("C:/Users/Lckpa/Desktop/Lucky/WP/imeags/wall.jpg");
+
+}
+#A3
+{
+    text-shadow: 2px 2px red;
+}
+#A4
+{
+    text-shadow: 2px 2px 5px red;
+}
+#A5
+{
+    color: pink;
+  text-shadow: 2px 2px 4px #000000;
+}
+#A6
+{
+    text-shadow: 0 0 3px #FF0000;
+}
