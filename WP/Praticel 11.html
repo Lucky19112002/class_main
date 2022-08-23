@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Praticel 11</title>
+    <script>
+        function tagstyle(){
+            var data1 ="String number 1.";
+            var data2 ="String number 2.";
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("1").innerHTML= "1. Using toString : " +fruits.toString();
+            document.getElementById("2").innerHTML= "2. Using join function "+ fruits.join(" * ");
+            document.getElementById("3").innerHTML= "3. Using pop function" + fruits.pop() + " Output is "+ fruits.toString();
+            document.getElementById("4").innerHTML= "4. Using push function" + fruits.push("Kiwi") + " Output is "+ fruits.toString();
+            document.getElementById("5").innerHTML= "5. Using shift function" + fruits.shift() + " Output is "+ fruits.toString();
+            document.getElementById("6").innerHTML= "6. Using unshift function" + fruits.unshift("Lemon") + " Output is "+ fruits.toString();
+            document.getElementById("7").innerHTML= "7. Length of a string : "+data1.length;
+            document.getElementById("8").innerHTML= "8. Delete of string : "+ delete fruits[0] + " Output is "+ fruits.toString();
+            const data3 = data1.concat(data2);
+            document.getElementById("9").innerHTML= "9. Concet of string : "+" Output is " + data3.toString();
+            document.getElementById("10").innerHTML= "10. Splice of string : "+ fruits.splice(0, 3);
+            document.getElementById("11").innerHTML= "11. Slice of string : "+ fruits.slice(0);
+            document.getElementById("12").innerHTML= "12. Date  : "+ new Date() ;  
+        }
+    </script>
+</head>
+<body>
+    <p>This is the text on which script tag is used.</p>
+    <p>data1 = "String number 1."<br></p>
+    <p>data2 = "String number 2."<br></p>
+    <p>fruits = ["Banana", "Orange", "Apple", "Mango"]<br></p>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <p id="9"></p>
+    <p id="10"></p>
+    <p id="11"></p>
+    <p id="12"></p>
+    <button onclick="tagstyle()">Press</button>
+</body>
+</html>
