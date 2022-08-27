@@ -125,6 +125,6 @@ int main()
     cout<<".... "<<"Done";
   }
   cout<<endl<<"Ploting the graph...";
-  system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'G:/Sem_5/DAA/file_out/1.bat' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'bubble','G:/Sem_5/DAA/file_out/2.bat' using 1:2 w lp lc rgb 'blue' lw 2 pt 7 title 'selection short','G:/Sem_5/DAA/file_out/3.bat' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'insertion short'\"");
+  system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/1.bat' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'bubble','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/2.bat' using 1:2 w lp lc rgb 'blue' lw 2 pt 7 title 'selection short','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/3.bat' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'insertion short'\"");
   return 0;
 }

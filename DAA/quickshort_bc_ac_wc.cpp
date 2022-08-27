@@ -31,7 +31,7 @@ void quickShort(int arr[],int l,int r){
 int main()
 {
   {//bubble short 
-    cout<<"Working on bubble sort avg case ....";
+    cout<<"Working on quick sort avg case ....";
     for(sizeofarray1 =10000;sizeofarray1<=50000;sizeofarray1=sizeofarray1+10000)
     {
       ofstream bf("file_out/qsa.txt",ios::app);
@@ -52,7 +52,7 @@ int main()
   }
   //bubble short 
   {
-    cout<<endl<<"Working on bubble sort best case  ....";
+    cout<<endl<<"Working on quick sort best case  ....";
     int bestCase = 0;
     for(sizeofarray1_1 =10000;sizeofarray1_1<=50000;sizeofarray1_1=sizeofarray1_1+10000)
     {
@@ -75,7 +75,7 @@ int main()
   }
   cout<<".... "<<"Done";
     {
-    cout<<endl<<"Working on bubble sort worst case  ....";
+    cout<<endl<<"Working on quick sort worst case  ....";
     int worstCase = 999999,sizeofarray1_1 = 0;
     for(sizeofarray1_1 =10000;sizeofarray1_1<=50000;sizeofarray1_1=sizeofarray1_1+10000)
     {
@@ -99,6 +99,6 @@ int main()
   }
     cout<<".... "<<"Done";
   cout<<endl<<"Ploting the graph...";
-  system(" gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'G:/Sem_5/DAA/file_out/qsb.txt' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'merg short best case','G:/Sem_5/DAA/file_out/qsa.txt' using 1:2 w lp lc rgb 'yellow' lw 2 pt 7 title 'merg short avg case','G:/Sem_5/DAA/file_out/qsw.txt' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'merg short worst case'\"");
+  system(" gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/qsb.txt' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'quick short best case','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/qsa.txt' using 1:2 w lp lc rgb 'yellow' lw 2 pt 7 title 'quick short avg case','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/qsw.txt' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'quick short worst case'\"");
   return 0;
 }

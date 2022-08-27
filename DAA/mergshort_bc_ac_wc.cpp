@@ -129,6 +129,6 @@ int main()
   }
     cout<<".... "<<"Done";
   cout<<endl<<"Ploting the graph...";
-  system(" gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'G:/Sem_5/DAA/file_out/msb.txt' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'merg short best case','G:/Sem_5/DAA/file_out/msa.txt' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'merg short worst case','G:/Sem_5/DAA/file_out/msw.txt' using 1:2 w lp lc rgb 'yellow' lw 2 pt 7 title 'merg short avg case'\"");
+  system(" gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/msb.txt' using 1:2 w lp lc rgb 'green' lw 2 pt 7 title 'merg short best case','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/msa.txt' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'merg short worst case','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/msw.txt' using 1:2 w lp lc rgb 'yellow' lw 2 pt 7 title 'merg short avg case'\"");
   return 0;
 }
