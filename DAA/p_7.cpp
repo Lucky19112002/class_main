@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 #include<chrono>
-#include<fstream>
 using namespace std;
 using namespace std::chrono;
 class Edge
@@ -49,7 +48,6 @@ void keuskals(Edge *input, int n, int E)
             parent[sourceParent] = destParent;
         } 
         i++;
-
     }
     cout<<endl<<"Output-"<<endl;
     for (int i = 0; i < n-1; i++)
@@ -63,41 +61,46 @@ void keuskals(Edge *input, int n, int E)
             cout<<output[i].dest<<" "<<output[i].source <<" "<<output[i].weight<< endl;
         }
     }
-    
 }
 int main()
 {
-    ofstream bf("file_out/KAMST.txt",ios::app);
-    int n = 0 ,E =0, g=0 ,X =0;
-    
-    for(n=10;n<=50;n=n+10)
+    int n,E,a =0;
+    cout<<"Enter number of vertices :- "<<endl;
+    cin>>n;
+    cout<<"Enter number of edges:- "<<endl;
+    cin>>E;
+    Edge *input = new Edge[E];
+    cout<<"Source - Destination - Weight"<<endl;
+    for (int i = 0; i < E; i++)   // Loop for bubbleshortarray
     {
-        int E = n-1;
-        Edge *input = new Edge[E];
-      for (int i = 0; i < E; i++,g++)   // Loop for bubbleshortarray
-      {
         int s,d,w;
-
-        s = rand() % 1000;
-        d = rand() % 1000;
-        w = rand() % 1000;
-
+        cin>>s>>d>>w;
         input[i].source= s;
         input[i].dest = d;
         input[i].weight = w;
-        cout<<g<<"-";
-      }
-      cout<<endl<<"Out of loop";
+    }
     auto start = high_resolution_clock::now();
     ios_base::sync_with_stdio(false);
     keuskals(input,n ,E);
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<chrono::milliseconds>(stop - start);
-    bf<<n<<" "<<fixed<<duration.count()<<endl;
-    }
-    bf.close();
-    cout<<".... "<<"Done";
-    system("C:/MinGW/bin/gnuplot.exe -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/KAMST.txt' using 1:2 w lp lc rgb 'red' lw 2 pt 7\"");
+    cout<<"For "<<n<<" vertices "<<" and "<<E<<"  edgs "<<" time taken is"<<" "<<fixed<<duration.count()<<" milliseconds"<<endl;
 }
-
-
+/* Data to enter 
+Enter number of vertices :- 
+6
+Enter number of edges:- 
+11
+Source - Destination - Weight
+0 1 2
+1 3 1
+0 2 4
+2 4 9
+4 5 5
+3 5 7
+4 3 11
+2 5 10
+0 3 3
+2 1 8
+2 3 6
+*/
