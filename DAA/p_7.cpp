@@ -1,106 +1,94 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #include<chrono>
 using namespace std;
-using namespace std::chrono;
-class Edge
-{
-    public:
-    int source;
-    int dest;
-    int weight;
-};
-bool compare(Edge e1, Edge e2)
-{
-    return e1.weight<e2.weight; //Sort in assiding order
-}
-int findParent(int v, int *parent)
-{
-    if(parent[v] == v)
-    {
-        return v;
-    }
-    else
-    return findParent(parent[v],parent);
-}
-void keuskals(Edge *input, int n, int E)
-{
-    sort(input,input+E,compare);
-    Edge *output = new Edge[n-1];
-    int *parent = new int[n];
-    for(int i =0; i< n;i++)
-    {
-        parent[i] = i;
-    }
+using namespace std::chrono; 
+const int V=5;
+int min_Key(int key[], bool visited[])  
+{ 
+    int min = 999, min_index;
 
-    int count =0;
-    int i =0;
-    while(count != n-1)
-    {
-        Edge currentEdge = input[i];
-        //cheak if we can add edge or not
-        int sourceParent = findParent(currentEdge.source,parent);
-        int destParent = findParent(currentEdge.dest,parent);
-
-        if(sourceParent != destParent)
+    for (int v = 0; v < V; v++) { 
+        if (visited[v] == false && key[v] < min) 
         {
-            output[count] = currentEdge;
-            count++;
-            parent[sourceParent] = destParent;
-        } 
-        i++;
+            min = key[v];
+			min_index = v;  
+        }
+    }    
+    return min_index;  
+}  
+int print_MST(int parent[], int cost[V][V])  
+{  
+    int minCost=0;
+	cout<<"Edge \tWeight\n";  
+    for (int i = 1; i< V; i++) {
+		cout<<parent[i]<<" - "<<i<<" \t"<<cost[i][parent[i]]<<" \n";  
+		minCost+=cost[i][parent[i]];
     }
-    cout<<endl<<"Output-"<<endl;
-    for (int i = 0; i < n-1; i++)
+	cout<<"Total cost is "<<minCost;
+}  
+void find_MST(int cost[V][V])  
+{  
+    int parent[V], key[V];
+    bool visited[V];
+    for (int i = 0; i< V; i++) 
+    { 
+        key[i] = 999;  
+        visited[i] = false;
+        parent[i]=-1;
+    }    
+    key[0] = 0;    
+    parent[0] = -1;    
+    for (int x = 0; x < V - 1; x++) 
     {
-        if(output[i].source<output[i].dest)
+        int u = min_Key(key, visited);
+        visited[u] = true; 
+        for (int v = 0; v < V; v++)  
         {  
-            cout<<output[i].source<<" "<<output[i].dest <<" "<<output[i].weight<< endl;
+            if (cost[u][v]!=0 && visited[v] == false && cost[u][v] < key[v])
+            {  
+                parent[v] = u;
+                key[v] = cost[u][v];  
+            }        
         }
-        else
-        {
-            cout<<output[i].dest<<" "<<output[i].source <<" "<<output[i].weight<< endl;
-        }
-    }
-}
-int main()
-{
-    int n,E,a =0;
-    cout<<"Enter number of vertices :- "<<endl;
-    cin>>n;
-    cout<<"Enter number of edges:- "<<endl;
-    cin>>E;
-    Edge *input = new Edge[E];
-    cout<<"Source - Destination - Weight"<<endl;
-    for (int i = 0; i < E; i++)   // Loop for bubbleshortarray
+    }  
+	print_MST(parent, cost);  
+}  
+
+// main function
+int main()  
+{  
+    int cost[V][V];
+	cout<<"Enter the vertices for a graph with 6 vetices"<<endl;
+    for (int i=0;i<V;i++)
     {
-        int s,d,w;
-        cin>>s>>d>>w;
-        input[i].source= s;
-        input[i].dest = d;
-        input[i].weight = w;
+        for(int j=0;j<V;j++)
+        {
+			cin>>cost[i][j];
+        }
     }
     auto start = high_resolution_clock::now();
     ios_base::sync_with_stdio(false);
-    keuskals(input,n ,E);
+	find_MST(cost);
     auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<chrono::milliseconds>(stop - start);
-    cout<<"For "<<n<<" vertices "<<" and "<<E<<"  edgs "<<" time taken is"<<" "<<fixed<<duration.count()<<" milliseconds"<<endl;
-}
-/* Data to enter 
-Enter number of vertices :- 
-6
-Enter number of edges:- 
-11
-Source - Destination - Weight
-0 1 2
-1 3 1
-0 2 4
-2 4 9
-4 5 5
-3 5 7
-4 3 11
-2 5 10
-0 3 3
-2 1 8
-2 3 6
+    auto duration = duration_cast<chrono::nanoseconds>(stop - start);
+    cout<<"\nThis time Graph taken is"<<" "<<"O("<<V*2<<")"<<endl;
+    return 0;  
+} 
+/*
+data to put-
+ 6 X 6
+0 4 0 0 0 2
+4 0 6 0 0 3
+0 6 0 3 0 1
+0 0 3 0 2 0
+0 0 0 2 0 4
+2 3 1 0 4 0
+
+2 -
+ 5 X 5
+0 2 0 6 0
+2 0 3 8 5
+0 3 0 0 7
+6 8 0 0 9
+0 5 7 9 0
 */

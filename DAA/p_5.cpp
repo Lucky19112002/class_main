@@ -23,22 +23,12 @@ void knapsack(int n,float weight[],float profit[],float capacity)
             u = u - weight[i]; // remob\ving weigth in capiicity
         }
     }
-    cout<<"\nThe Weight Vectoe is :- ";
-    for(i =0 ; i<n ; i++){
-        cout<<weight[i]<<"\t";
-
-    }
     if(i<n)
-        x[i] = u / weight[i];
-        if (x[i] == 1)
-            tp = tp +(x[i] * profit[i]); //get int capecity of boj in 0.---
-    
+        x[i] = u / weight[i]; //get int capecity of boj in 0.---
+    tp = tp +(x[i] * profit[i]);
     cout<<"\nThe Result Vectoe is :- ";
     for(i =0 ; i<n ; i++){
-        if(x[i] == 1)
-            cout<<x[i]<<"\t";
-        else
-            cout<<"0"<<"\t";
+        cout<<x[i]<<"\t";
     }
     cout<<"\nMaxinum Profit is :- "<<tp;
 }
@@ -102,23 +92,24 @@ int main()
     knapsack(num,weight,profit,capacity);
     return 0;
 }
-/*
-5
-1-
-20
-        50
-2-
-10
-        20
-3-
-20
-        90
-4-
-40
-        30
-5-
-10
-        90
 
-80
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

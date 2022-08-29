@@ -1,115 +1,106 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
+#include<chrono>
 using namespace std;
-
-void knapsack(int n,float weight[],float profit[],float capacity)
+using namespace std::chrono;
+class Edge
 {
-    float x[20],tp =0; //tp--->Total Profit
-    int i,j,u;
-    u = capacity;
-    for(i =0 ; i<n ; i++)
+    public:
+    int source;
+    int dest;
+    int weight;
+};
+bool compare(Edge e1, Edge e2)
+{
+    return e1.weight<e2.weight; //Sort in assiding order
+}
+int findParent(int v, int *parent)
+{
+    if(parent[v] == v)
     {
-        x[i] = 0.0;
+        return v;
     }
-    for(i =0 ; i<n ; i++)
+    else
+    return findParent(parent[v],parent);
+}
+void keuskals(Edge *input, int n, int E)
+{
+    sort(input,input+E,compare);
+    Edge *output = new Edge[n-1];
+    int *parent = new int[n];
+    for(int i =0; i< n;i++)
     {
-        if(weight[i]> u)
+        parent[i] = i;
+    }
+
+    int count =0;
+    int i =0;
+    while(count != n-1)
+    {
+        Edge currentEdge = input[i];
+        //cheak if we can add edge or not
+        int sourceParent = findParent(currentEdge.source,parent);
+        int destParent = findParent(currentEdge.dest,parent);
+
+        if(sourceParent != destParent)
         {
-            break;
+            output[count] = currentEdge;
+            count++;
+            parent[sourceParent] = destParent;
+        } 
+        i++;
+    }
+    cout<<endl<<"Output-"<<endl;
+    for (int i = 0; i < n-1; i++)
+    {
+        if(output[i].source<output[i].dest)
+        {  
+            cout<<output[i].source<<" "<<output[i].dest <<" "<<output[i].weight<< endl;
         }
         else
         {
-            x[i] = 1.0; // object is accepted
-            tp = tp + profit[i]; // adding profit
-            u = u - weight[i]; // remob\ving weigth in capiicity
+            cout<<output[i].dest<<" "<<output[i].source <<" "<<output[i].weight<< endl;
         }
     }
-    if(i<n)
-        x[i] = u / weight[i]; //get int capecity of boj in 0.---
-    tp = tp +(x[i] * profit[i]);
-    cout<<"\nThe Result Vectoe is :- ";
-    for(i =0 ; i<n ; i++){
-        cout<<x[i]<<"\t";
-    }
-    cout<<"\nMaxinum Profit is :- "<<tp;
 }
-
 int main()
 {
-    float weight[20], profit[20] , capacity;
-    int num ,i ,j ,w = 0 ,p = 0;
-    float ratio[20],temp;
-    cout<<"\nEnter the number of objects :-";
-    cin>>num;
-    cout<<"\nEnter the weight and profit of each object :-\n";
-    cout<<"Weight"<<"\t"<<"Profit"<<endl;
-    for( i =0;i<num;i++)
+    int n,E,a =0;
+    cout<<"Enter number of vertices :- "<<endl;
+    cin>>n;
+    cout<<"Enter number of edges:- "<<endl;
+    cin>>E;
+    Edge *input = new Edge[E];
+    cout<<"Source - Destination - Weight"<<endl;
+    for (int i = 0; i < E; i++)   // Loop for bubbleshortarray
     {
-        cout<<i+1<<"-\n";
-        cin>>weight[i];cout<<"\t";cin>>profit[i];
+        int s,d,w;
+        cin>>s>>d>>w;
+        input[i].source= s;
+        input[i].dest = d;
+        input[i].weight = w;
     }
-    cout<<"\nTotal amouth of weigth :- ";
-    for(i =0 ; i<num ; i++){
-        w = w + weight[i];
-    }
-    cout<<w;
-    cout<<"\nTotal amouth of profit :- ";
-    for(i =0 ; i<num ; i++){
-        p = p + profit[i];
-    }
-    cout<<p;
-    cout<<"\nEnter the capacity of kanpsack:- ";
-    cin>>capacity;
-
-    for( i =0;i<num;i++)
-    {
-        ratio[i] = profit[i]/weight[i];
-    }
-
-    for( i =0 ;i<num;i++)
-    {
-        for(j =1+i;j<num; j++)
-        {
-            if(ratio[i]<ratio[j])
-            {
-                temp = ratio[j];
-                ratio[j] = ratio[i];
-                ratio[i] = temp;
-
-                temp = weight[j];
-                weight[j] = weight[i];
-                weight[i] = temp;
-
-                temp = profit[j];
-                profit[j] = profit[i];
-                profit[i] = temp;
-            }
-        }
-    }
-    cout<<"\nThe V / W  ratios is :- ";
-    for(i =0 ; i<num ; i++){
-        cout<<ratio[i]<<"\t";
-    }
-    knapsack(num,weight,profit,capacity);
-    return 0;
+    auto start = high_resolution_clock::now();
+    ios_base::sync_with_stdio(false);
+    keuskals(input,n ,E);
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<chrono::milliseconds>(stop - start);
+    cout<<"For "<<n<<" vertices "<<" and "<<E<<"  edgs "<<" time taken is"<<" "<<fixed<<duration.count()<<" milliseconds"<<endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Data to enter 
+Enter number of vertices :- 
+6
+Enter number of edges:- 
+11
+Source - Destination - Weight
+0 1 2
+1 3 1
+0 2 4
+2 4 9
+4 5 5
+3 5 7
+4 3 11
+2 5 10
+0 3 3
+2 1 8
+2 3 6
+*/
