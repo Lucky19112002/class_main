@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">WP/p1.html
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script>
+    function dates(){
+      document.getElementById("01").innerHTML= new Date() ;
+    }
+  </script>
 </head>
 <body>
-  <div>This is Fotter</div>
-  # use input:anything 
+  <button onclick="dates()">Click to see date and time </button>
+  <p id ="01"></p>
 </body>
 </html>

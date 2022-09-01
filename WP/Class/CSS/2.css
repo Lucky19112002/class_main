@@ -3,10 +3,9 @@
   /* backgrount image code
    background: #ff000f url("download.png") no-repeat left bottom; 
    */
-  /* background-image: url("download.png");
+   background-image: url("download.png");
   background-repeat:round ; */
-  /* text properities
-  color: blue;
+    color: blue;
   text-align: justify;
   text-decoration: underline;
   text-transform: uppercase;
@@ -15,8 +14,8 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
   font-size: 3.75em;
-  */
-  /* border properties 
+  
+   
   border: 10px;
   border-width: 10px;
   border-top-style: solid;
@@ -29,6 +28,6 @@
   border-right-color: violet;
   border-radius: 10px;
   border-inline-start-color: brown;
-  */
+  
   
 }
