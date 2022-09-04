@@ -39,7 +39,7 @@ void keuskals(Edge *input, int n, int E)
         int sourceParent = findParent(currentEdge.source,parent);
         int destParent = findParent(currentEdge.dest,parent);
 
-        if(sourceParent != destParent)
+        if(sourceParent != destParent) 
         {
             output[count] = currentEdge;
             count++;
@@ -95,4 +95,21 @@ Source - Destination - Weight
 0 3 3
 2 1 8
 2 3 6
+    
 */
+    0-------{2}----- 1
+    |  -           - |    
+    |      -{4} -    |     
+   {3}       --     {8}
+    |      -    -    |    
+    |  -{1}        - |      
+ ~--3-------{6}------2      
+ |  |              - |   
+ |  |            -   |        
+ | {11}       -     {10}      
+ |  |      -         |     
+ |  |   -{9}         |
+ |  4-------{5}------5  
+ |                   |  
+ ~---------{7}-------~
+ 
