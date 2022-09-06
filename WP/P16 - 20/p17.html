@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Object from JSON String</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"Pathan","lastName":"Lucky" },' +
+'{"firstName":"Patel","lastName":"Swet" },' +
+'{"firstName":"Pathan","lastName":"Kareena" }]}';
+
+const obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = "1. "+obj.employees[0].firstName + " " + obj.employees[0].lastName;
+document.getElementById("demo1").innerHTML = "2. "+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+document.getElementById("demo2").innerHTML = "3. "+obj.employees[2].firstName + " " + obj.employees[2].lastName;
+</script>
+
+</body>
+</html>

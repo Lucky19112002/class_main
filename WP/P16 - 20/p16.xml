@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="p16.xsl" type="text/xsl"?>
+<cdcatalog>
+    <cd>
+        <Title> Hide your Heart </Title>
+        <Artist> Bonnie Tyler </Artist>
+        <Company> CBS </Company>
+        <Price> 9.90 </Price>
+        <Year> 1988 </Year>
+    </cd>
+    <cd>
+        <Title> Greatest Hits </Title>
+        <Artist> Dolly Parton </Artist>
+        <Company> RCA </Company>
+        <Price> 9.90 </Price>
+        <Year> 1982 </Year>
+    </cd>
+    <cd>
+        <Title> Still got the blues </Title>
+        <Artist> Gary Moore </Artist>
+        <Company> Virgin </Company>
+        <Price> 10.20 </Price>
+        <Year> 1990 </Year>
+    </cd>
+    <cd>
+        <Title> Maggie May </Title>
+        <Artist> Rod Stewart </Artist>
+        <Company> Pickwick </Company>
+        <Price> 8.50 </Price>
+        <Year> 1997 </Year>
+    </cd>
+    <cd>
+        <Title> One night only </Title>
+        <Artist> Bee Gees </Artist>
+        <Company> Polydor </Company>
+        <Price> 10.90 </Price>
+        <Year> 1998 </Year>
+    </cd>
+</cdcatalog>
