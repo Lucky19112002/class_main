@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function valid()
+        {
+            if(document.f1.fn.value == null)
+            {
+                console.log("Enter name ");
+                document.f1.fn.focus();
+                return false;
+            }
+            if(document.f1.email.value == " ")
+            {
+                console.log("Enter email ");
+                document.f1.fn.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" onsubmit="retuen(valid());">
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="fn"</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit">  </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
