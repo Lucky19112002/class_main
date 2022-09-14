@@ -27,14 +27,12 @@ void dfs(int node)
 
 int main()
 {
-    {   
-        ofstream bf("file_out/bfs.txt",ios::trunc);
-        bf<<"#BFS in milliseconds"<<endl;
-        auto start = high_resolution_clock::now();ios_base::sync_with_stdio(false);
-
-
+    ofstream bf("file_out/bfs.txt",ios::trunc);
+    bf<<"#BFS in milliseconds"<<endl;
+    auto start = high_resolution_clock::now();ios_base::sync_with_stdio(false);
+    for(int i = 0; i<10000 ; i++)
+    {
         vector<int> adj[N];
-        cout<<"\nFor BFS :\n";
         for(int i =0; i<N; i++)
         vis[i] = 0;
         int n,m;
@@ -44,7 +42,8 @@ int main()
         int x,y;
         for (int i = 0; i < m; i++)
         {
-            cin >> x  >> y;
+            x = rand() % 20 ;
+            y = rand() % 10 ;
             adj[x].push_back(y);
             adj[y].push_back(x);
         }
@@ -65,41 +64,42 @@ int main()
                 }
             }
         }
-        auto stop = high_resolution_clock::now();
-        auto duration = duration_cast<chrono::milliseconds>(stop - start);
-        int start1=0,start2=0;
-        bf<<start1<<" "<<start2<<endl;
-        int size = 7;
-        bf<<size<<" "<<fixed<<duration.count()<<endl;
-        cout<<".";
-
-
+        
     }
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<chrono::milliseconds>(stop - start);
+    int start1=0,start2=0;
+    bf<<start1<<" "<<start2<<endl;
+    int size = 7;
+    bf<<size<<" "<<fixed<<duration.count()<<endl;
+    cout<<".";
     {
         ofstream bf("file_out/dfs.txt",ios::trunc);
         bf<<"#DFS in milliseconds"<<endl;
         auto start = high_resolution_clock::now();ios_base::sync_with_stdio(false);
-        cout<<"\nFor DFS :\n";
-        int n,m;
-        n = 7;
-        m = 7;
-        for(int i =0 ; i<=n ; i++)
-            vis[i] = false;
-        int x,y;
-        for (int i = 0; i < m; i++)
+        for(int i = 0; i<10000 ; i++)
         {
-            cin >> x  >> y;
-            adj[x].push_back(y);
-            adj[y].push_back(x);
+            int n,m;
+            n = 7;
+            m = 7;
+            for(int i =0 ; i<=n ; i++)
+                vis[i] = false;
+            int x,y;
+            for (int i = 0; i < m; i++)
+            {
+                x = rand() % 20 ;
+                y = rand() % 10 ;
+                adj[x].push_back(y);
+                adj[y].push_back(x);
+            }
+            dfs(1);    
         }
-        dfs(1);
         auto stop = high_resolution_clock::now();
         auto duration = duration_cast<chrono::milliseconds>(stop - start);
         int start1=0,start2=0;
         bf<<start1<<" "<<start2<<endl;
         int size = 7;
         bf<<size<<" "<<fixed<<duration.count()<<endl;
-        cout<<".";
     }
     system("gnuplot -p -e \"set ylabel 'mileseconds' ; set xlabel 'data set' ; p 'C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/BFS.txt' using 1:2 w lp lc rgb 'red' lw 2 pt 7 title 'BFS','C:/Users/Lckpa/Desktop/Lucky/DAA/file_out/dfs.txt' using 1:2 w lp lc rgb 'blue' lw 2 pt 7 title 'DFS'\"");
 }
