@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="para0"></p>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        var jsonObjectArray = {
+            "books": [
+                { 
+                    "name": "Let Us C", 
+                    "author": "Yashavant Kanetkar" 
+                },
+                { 
+                    "name": "Rich Dad Poor Dad", 
+                    "author": "Robert Kiyosaki " 
+                },
+                { 
+                    "name": "Introduction to Algorithms", 
+                    "author": "Cormen" 
+                },
+            ]
+        };
+        var x = jsonObjectArray.books[0]; 
+        document.getElementById("para0").innerHTML = x.name + " by " + x.author;
+        var x = jsonObjectArray.books[1]; 
+        document.getElementById("para1").innerHTML = x.name + " by " + x.author;
+        var x = jsonObjectArray.books[2]; 
+        document.getElementById("para2").innerHTML = x.name + " by " + x.author;
+    </script>
+</body>
+</html>

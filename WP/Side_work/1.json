@@ -1,0 +1,7 @@
+{
+    "data" :[
+        {"name" : "Ashwin" , "age" : "20" , "city" : "Vadodara"},
+        {"name" : "Sweara", "age" : "10" , "city" : "Rajkot"},
+        {"name" : "rehan", "age" : "22" , "city" : "Mumbai"}
+    ]
+}
